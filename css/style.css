@@ -16,6 +16,16 @@ body {
   margin: 0 auto;
 }
 
+/*Css for navbar*/
+
+header {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 nav {
   height: 60px;
   font-size: 18px;
@@ -40,6 +50,7 @@ nav ul li a {
 #right-margin {
   margin-right: 300px;
 }
+
 nav ul li button {
   font-size: 15px;
   width: 90px;
@@ -53,4 +64,84 @@ nav ul li button {
 nav ul li button:hover {
   background-color: blue;
   color: white;
+}
+
+/*CSS for Section1 - Jumbotron*/
+
+.mysection1 {
+  background-image: url(../img/jumbo.svg);
+  margin-top: 60px;
+  background-size: cover;
+  padding: 3% 0;
+}
+
+section.mysection1 div.width70 {
+  display: flex;
+  justify-content: center;
+}
+
+section.mysection1 div.width70 > div{
+  width: 60%;
+}
+
+section.mysection1 div.width70 > div.white{
+  width: 40%;
+  margin-left: 10px;
+}
+
+section.mysection1 div.width70 div > h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+section.mysection1 div.width70 div > p {
+  font-size: 20px;
+  color: lightgrey;
+}
+
+div.white {
+  background-color: white;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+div.white h2,
+div.white h6{
+  text-align: center;
+}
+
+div.white h2 span {
+  color: blue;
+}
+
+div.white input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+div.white button {
+  height: 50px;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+
+
+#myfix1 {
+  text-align: left;
+  background-color: white;
+  color: black;
+  border-color: grey;
+}
+
+#google img{
+  width:5%;
+  height:auto;
+  margin-right: 150px;
 }
