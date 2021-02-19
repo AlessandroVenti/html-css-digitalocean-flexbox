@@ -86,8 +86,12 @@ section.mysection1 div.width70 {
   justify-content: center;
 }
 
-section.mysection1 div.width70 > div{
-  width: 60%;
+section.mysection1 div.width70  div:first-child{
+  flex-basis: 60%;
+}
+
+section.mysection1 div.width70  div:last-child{
+  flex-basis: 50%;
 }
 
 section.mysection1 div.width70 > div.white{
@@ -225,7 +229,7 @@ div.myborder-list ul li:hover {
 }
 
 div.box2 > div {
-  width: 40%;
+  flex-basis: 40%;
   margin-top: 20px;
   margin-left: 10%;
 }
@@ -242,4 +246,36 @@ div.box2 p {
 
 div.box2 p{
   margin-bottom: 30px;
+}
+
+/*CSS for Section 4,5,6*/
+
+.arrow-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.mysection2 i.fa-chevron-left,
+section.mysection2 i.fa-chevron-right{
+  font-size: 30px;
+}
+
+section.mysection2 i.fa-chevron-left:hover,
+section.mysection2 i.fa-chevron-right:hover {
+    color: blue;
+}
+
+section.mysection2 h6 {
+  margin-top: 50px;
+  font-size: 15px;
+}
+
+.circle {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid blue;
+  background-color: blue;
 }
