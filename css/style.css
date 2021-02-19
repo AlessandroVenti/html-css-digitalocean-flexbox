@@ -279,3 +279,48 @@ section.mysection2 h6 {
   border: 1px solid blue;
   background-color: blue;
 }
+
+.box3 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*CSS for Section 6*/
+.mysection6 {
+  background: linear-gradient(to bottom, #2285fd, #031c4e);
+  padding: 50px 0;
+  text-align: center;
+  color: white;
+}
+
+section.mysection6 div.width70 > div{
+  display: flex;
+  justify-content: center;
+}
+
+section.mysection6 div.width70 div > table {
+  flex-basis: 40%;
+}
+
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
+  border-top: 0px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+}
+
+table.table tr td a{
+  color: turquoise;
+}
+
+table.table tr td a:hover{
+  color: red;
+}
+
+.table>tbody>tr>td:hover {
+  color: red;
+}
