@@ -145,3 +145,28 @@ div.white button {
   height:auto;
   margin-right: 150px;
 }
+
+/*CSS for Section 2*/
+
+.mysection2 {
+background-color: #f3f5f9;
+text-align: center;
+padding: 35px 0;
+}
+
+section.mysection2 div.width70 > div {
+  display: flex;
+  justify-content: center;
+}
+
+section.mysection2 img {
+  max-width: 100%;
+  min-height: 100px;
+  padding: 0 10px;
+}
+
+section.mysection2 h6 a{
+  color: #337ab7;
+  text-decoration: none;
+  font-size: 15px;
+}
