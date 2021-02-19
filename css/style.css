@@ -376,3 +376,61 @@ section.mysection7 i.fa-chevron-right{
   background-color: red;
   color: white;
 }
+
+/*CSS for Footer*/
+.myfooter {
+  background-color: #252850;
+  padding: 45px 0;
+}
+
+footer.myfooter div.width70 {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer.myfooter h6 {
+  color: white;
+  margin: 10px 0;
+}
+
+footer.myfooter h6 span {
+  display: inline-block;
+  color: grey;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+footer.myfooter i {
+  color: white;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+footer.myfooter i:hover {
+color: blue;
+}
+
+footer.myfooter ul {
+  list-style-type: none;
+}
+
+footer.myfooter ul li {
+  padding-bottom: 10px;
+}
+
+footer.myfooter ul li strong {
+  color: white;
+}
+
+footer.myfooter ul li strong:hover {
+  color: red;
+}
+
+footer.myfooter ul li a {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+footer.myfooter ul li a:hover{
+  color: blue;
+}
