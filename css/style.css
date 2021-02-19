@@ -156,6 +156,12 @@ div.white button {
   margin-right: 150px;
 }
 
+#myfix1 > div {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+}
+
 /*CSS for Section 2*/
 
 .mysection2 {
