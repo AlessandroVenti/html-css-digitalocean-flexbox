@@ -87,16 +87,12 @@ section.mysection1 div.width70 {
 }
 
 section.mysection1 div.width70  div:first-child{
-  flex-basis: 60%;
-}
-
-section.mysection1 div.width70  div:last-child{
   flex-basis: 50%;
 }
 
-section.mysection1 div.width70 > div.white{
-  width: 40%;
-  margin-left: 10px;
+section.mysection1 div.width70  div:last-child{
+  flex-basis: 40%;
+  margin-left: 5%;
 }
 
 section.mysection1 div.width70 div > h1 {
@@ -289,6 +285,7 @@ section.mysection2 h6 {
 .box3 {
   display: flex;
   justify-content: flex-start;
+  text-align: left;
 }
 
 /*CSS for Section 6*/
@@ -301,11 +298,11 @@ section.mysection2 h6 {
 
 section.mysection6 div.width70 > div{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 section.mysection6 div.width70 div > table {
-  flex-basis: 40%;
+  flex-basis: 48%;
 }
 
 .table>tbody>tr>td,
@@ -358,6 +355,11 @@ section.mysection7 h6{
 section.mysection7 i.fa-chevron-left,
 section.mysection7 i.fa-chevron-right{
   font-size: 30px;
+}
+
+div.arrow-image div.white {
+  flex-basis: 60%;
+  margin: 0 2%;
 }
 
 /*CSS for Section 8*/
@@ -439,4 +441,143 @@ footer.myfooter ul li a {
 
 footer.myfooter ul li a:hover{
   color: blue;
+}
+
+@media (max-width: 1200px) AND (min-width: 768px) {
+
+  section.mysection1 div.width70  div:first-child{
+    flex-basis: 60%;
+  }
+
+  section.mysection1 div.width70  div:last-child{
+    flex-basis: 40%;
+    margin-left: 5%;
+  }
+
+  section.mysection2 div.width70 > div {
+    flex-wrap: wrap;
+  }
+
+  section.mysection2 img {
+    flex-shrink: 2;
+  }
+
+  section.mysection2 div.width70 > .arrow-image {
+    flex-wrap: nowrap;
+  }
+
+  section.mysection2 i.fa-chevron-left,
+  section.mysection2 i.fa-chevron-right {
+    flex-basis: 20%;
+  }
+
+  .box3 {
+    justify-content: space-between;
+  }
+
+  div.box3 > div {
+    flex-basis: 30%;
+  }
+
+  section.mysection6 div.width70 > div {
+    flex-wrap: wrap;
+  }
+
+  section.mysection6 div.width70 div > table {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  div.white {
+    flex-basis: 60%;
+  }
+
+  footer.myfooter div.width70 {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  footer.myfooter div.width70 > div {
+    flex-basis: 100%;
+  }
+
+  footer.myfooter ul {
+    flex-basis: 50%;
+    margin: 4% 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+
+  section.mysection1 div.width70 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  section.mysection1 div.width70  div:first-child{
+    flex-basis: 100%;
+  }
+
+  section.mysection1 div.width70  div:last-child{
+    flex-basis: 100%;
+  }
+
+  section.mysection2 div.width70 > div {
+    flex-wrap: wrap;
+  }
+
+  section.mysection2 img {
+    flex-basis: 50%;
+  }
+
+  div.box2 > div {
+    flex-basis: 90%;
+    margin-top: 20px;
+    margin-left: 10%;
+  }
+
+  section.mysection2 i.fa-chevron-left,
+  section.mysection2 i.fa-chevron-right {
+    display: none;
+  }
+
+  .box3 {
+    flex-wrap: wrap;
+  }
+
+  div.box3 > div {
+    flex-basis: 100%;
+  }
+
+  section.mysection6 div.width70 > div {
+  flex-wrap: wrap;
+  }
+
+  section.mysection6 div.width70 div > table {
+    flex-basis: 100%;
+    margin-bottom: 50px;
+  }
+
+  section.mysection7 i.fa-chevron-left, section.mysection7 i.fa-chevron-right {
+  display: none;
+  }
+
+  div.white {
+  flex-basis: 70%;
+  }
+
+  footer.myfooter div.width70 {
+    flex-direction: column;
+  }
+
+  footer.myfooter div.width70 > div {
+    flex-basis: 100%;
+  }
+
+  footer.myfooter ul {
+    flex-basis: 50%;
+    margin: 2% 0;
+  }
+
 }
