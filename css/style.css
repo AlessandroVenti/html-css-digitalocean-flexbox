@@ -40,6 +40,10 @@ nav {
   align-items: center;
 }
 
+nav.width70 {
+  position: relative;
+}
+
 nav img {
   width: 140px;
   height: auto;
@@ -70,6 +74,14 @@ nav ul li button {
 nav ul li button:hover {
   background-color: blue;
   color: white;
+}
+
+#toggle {
+  display: none;
+  position: absolute;
+  right: 0;
+  color: blue;
+  font-size: 15px;
 }
 
 /*CSS for Section1 - Jumbotron*/
@@ -445,6 +457,30 @@ footer.myfooter ul li a:hover{
 
 @media (max-width: 1200px) AND (min-width: 768px) {
 
+  #toggle {
+    display: block;
+  }
+
+  ul#right-margin {
+    display:none;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  #toggle:hover + ul#right-margin {
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 60px;
+  }
+
+  #toggle:hover + ul#right-margin li, toggle:hover + ul#right-margin li a{
+    font-size: 20px;
+  }
+
   section.mysection1 div.width70  div:first-child{
     flex-basis: 60%;
   }
@@ -509,6 +545,30 @@ footer.myfooter ul li a:hover{
 
 
 @media (max-width: 768px) {
+
+  #toggle {
+    display: block;
+  }
+
+  ul#right-margin {
+    display:none;
+  }
+
+  nav ul{
+    display: none;
+  }
+
+  #toggle:hover + ul#right-margin {
+    display: block;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 60px;
+  }
+
+  #toggle:hover + ul#right-margin li, toggle:hover + ul#right-margin li a{
+    font-size: 20px;
+  }
 
   section.mysection1 div.width70 {
     flex-direction: column;
