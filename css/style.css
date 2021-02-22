@@ -61,6 +61,11 @@ nav ul li a {
   margin-right: 300px;
 }
 
+.listflex {
+  display: flex;
+  justify-content: space-between;
+}
+
 nav ul li button {
   font-size: 15px;
   width: 90px;
@@ -461,15 +466,11 @@ footer.myfooter ul li a:hover{
     display: block;
   }
 
-  ul#right-margin {
+  div.listflex {
     display:none;
   }
 
-  nav ul{
-    display: none;
-  }
-
-  #toggle:hover + ul#right-margin {
+  #toggle:hover + div.listflex{
     display: block;
     background-color: white;
     position: absolute;
@@ -477,8 +478,9 @@ footer.myfooter ul li a:hover{
     top: 60px;
   }
 
-  #toggle:hover + ul#right-margin li, toggle:hover + ul#right-margin li a{
+  div.listflex ul li {
     font-size: 20px;
+    display: block;
   }
 
   section.mysection1 div.width70  div:first-child{
