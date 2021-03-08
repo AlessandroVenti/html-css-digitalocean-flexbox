@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  background-color: red;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  width: 100%;
+  height: 50px;
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+header div {
+  flex-basis: 20%;
+}
+
+header ul {
+  flex-basis: 40%;
+}
+
+header ul:last-child {
+  text-align: right;
+}
+
+header img {
+  width: auto;
+  height: 25px;
+  flex-basis: 10%;
+  background-color: yellow;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 0 10px;
+}
+
+header ul li a{
+  color: grey;
+}
+
+header ul li button {
+  width: 62px;
+  height: 27px;
+  font-size: 15px;
+  color: blue;
+  border: 1px solid blue;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 3px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+}
+
+header ul li button:hover {
+  background-color: blue;
+  color: white;
+}
+
+main section {
+  padding: 5% 10%;
+  text-align: center;
+}
+
+.myjumbotron {
+  background-image: url(../img/jumbo.svg);
+  margin-top: 50px;
+  background-size: cover;
+}
+
+.myjumbotron div:first-child {
+  margin-right: 20px;
+  flex-basis: calc(100% / 2 - 20px);
+  text-align: left;
+}
+
+.marginforjumbo h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.marginforjumbo p {
+  font-size: 20px;
+  color: lightgrey;
+}
+
+div.white {
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  margin-left: 12.5px;
+  flex-basis: calc(100% / 2 - 12.5px);
+}
+
+.white h2,
+.white h6{
+  text-align: center;
+}
+
+.white h2 span {
+  color: blue;
+}
+
+.white input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.white button {
+  height: 50px;
+  width: 100%;
+  background-color: blue;
+  color: white;
+  margin-bottom: 2px;
+  border-radius: 5px;
+}
+
+#myfix1 {
+  text-align: left;
+  background-color: white;
+  color: black;
+  border-color: grey;
+}
+
+#google img{
+  width:5%;
+  height:auto;
+  margin-right: 150px;
+}
+
+main section.grey-section {
+  background-color: #f3f5f9;
+}
+
+h5 {
+color: grey;
+}
+
+h5,
+h6 {
+  font-size: 15px;
+}
+
+section.grey-section ul{
+  justify-content: center;
+}
+
+section.grey-section li {
+  flex-basis: calc(100% / 6);
+
+}
+
+main section.grey-section li img {
+  max-width: 90%;
+  min-height: 150px;
+}
+
+
+.deploy-and-scale {
+  background-color: white;
+}
+
+h2 {
+font-size: 35px;
+margin-bottom: 10px;
+}
+
+p {
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 40px;
+  color: grey;
+}
+
+section.deploy-and-scale div {
+  justify-content: space-between;
+}
+
+section.deploy-and-scale div.flex ul {
+  flex-basis: 20%;
+  border-left: 1px solid grey;
+  max-height: 265px;
+}
+
+section.deploy-and-scale div.flex ul li {
+  padding-right: 100%;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  font-size: 20px;
+  color: grey;
+}
+
+section.deploy-and-scale div.flex div.flex{
+  flex-wrap: wrap;
+}
+
+section.deploy-and-scale div.flex div.flex div {
+  flex-basis: calc(95% / 2 );
+  text-align: left;
+}
+
+section.deploy-and-scale div.flex div.flex div h3{
+  font-size: 25px;
+  margin: 10px 0;
+}
+
+section.deploy-and-scale div.flex div.flex div p {
+  font-size: 22px;
+}
+
+
+section.deploy-and-scale div.flex div{
+  flex-basis: 70%;
+}
+
+main section.grey-section div.flex {
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+section.grey-section div.flex i {
+  font-size: 35px;
+  color: grey;
+}
+
+section.grey-section div.flex img {
+   flex-basis: calc(30% - 50px);
+   margin: 0 25px;
+   max-height: 350px;
+  }
+
+h6 {
+  font-size: 17px;
+}
+
+section.grey-section div.circle i {
+  font-size: 12px;
+  margin: 10px 0;
+  color: blue;
+}
+
+section.feature {
+  background-color: white;
+}
+
+section.feature ul.flex {
+  justify-content: space-between;
+  text-align: left;
+  padding: 30px 0;
+}
+
+section.feature ul.flex li {
+  flex-basis: calc(100% / 3 - 20px);
+}
+
+section.feature ul.flex li img,
+section.feature ul.flex li h3,
+section.feature ul.flex li p {
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+section.feature ul.flex li p {
+  font-size: 20px;
+}
+
+section.table-section {
+  background: linear-gradient(to bottom, #2285fd, #031c4e);
+  color: white;
+}
+
+section.table-section div.flex {
+  justify-content: space-between;
+}
+
+section.table-section div.flex table {
+  flex-basis: calc(100% / 2 - 20px);
+} 
+
+table {
+  text-align: left;
+}
+
+table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td, 
+.table>tfoot>tr>th, 
+.table>thead>tr>td, 
+.table>thead>tr>th {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+section.grey-section div.flex div {
+  flex-basis: 50%;
+  background-color: white;
+  margin: 0 20px;
+  padding: 80px 0;
+}
+
+section.grey-section div.flex div img,
+section.grey-section div.flex div p,
+section.grey-section div.flex div h6,
+section.grey-section div.flex div a {
+  margin-bottom: 20px;
+}
+
+section.blue {
+  background-color: rgb(0, 79, 206);
+  color: white;
+}
+
+section.blue button {
+  margin-top: 15px;
+  height: 50px;
+  width: 200px;
+  background-color: white;
+  color: blue;
+  border-radius: 7px;
+  font-size: 18px;
+  border: 0;
+}
+
+footer.flex {
+  background-color: #031c4e;
+  padding: 5% 10%;
+  justify-content: space-between;
+}
+
+footer.flex div{
+  flex-basis: 30%;
+}
+
+footer.flex ul{
+  flex-basis: calc(70% / 4);
+}
+
+footer.flex div h6{
+  color: lightgrey;
+  font-size: 15px;
+  line-height: 20px;
+  margin: 10px 0;
+}
+
+footer.flex div h6 span{
+  color: grey;
+}
+
+footer.flex div a i{
+  font-size: 25px;
+  padding: 0 5px;
+  color: lightgrey;
+}
+
+footer.flex ul li a{
+  color: lightgrey;
+  line-height: 35px;
+}
+
+footer.flex ul li strong {
+  color: white;
+  font-size: 20px;
+}
+
+section.deploy-and-scale div.flex ul li:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+section.grey-section div.flex i:hover {
+  color: blue;
+}
+
+@media (max-width: 1200px) AND (min-width: 768px) {
+
+  main section {
+    padding: 5% 3%;
+  }
+
+  .myjumbotron div:first-child {
+    flex-basis: 60%;
+  }
+
+  div.white {
+    flex-basis: 40%;
+  }
+   
+  section.deploy-and-scale div.flex ul {
+    margin-left: 10%;
+  }
+    
+  section.grey-section div.flex img {
+    flex-basis: calc(20% - 50px);
+    max-height: 250px;
+  }
+
+  section.table-section div.flex {
+    flex-wrap: wrap ;
+  }
+
+  section.table-section div.flex table {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
+  footer.flex {
+    flex-wrap: wrap;
+  }
+
+  footer.flex div {
+    flex-basis: 100%;
+  }
+
+  footer.flex ul {
+    flex-basis: 50%;
+    margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+  main section {
+    padding: 5% 2%;
+  }
+
+  .myjumbotron {
+    flex-wrap: wrap;
+  }
+
+  .myjumbotron div:first-child {
+    flex-basis: 100%;
+  }
+
+  div.white {
+    flex-basis: 100%;
+    margin-left: 0;
+  }
+
+  section.grey-section ul {
+    flex-wrap: wrap;
+  }
+
+  section.grey-section li {
+    flex-basis: 50%;
+  }
+
+  section.deploy-and-scale div {
+    flex-wrap: wrap;
+  }
+
+  section.deploy-and-scale div.flex ul {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  section.deploy-and-scale div.flex div {
+    flex-basis: 100%;
+  }
+
+  section.deploy-and-scale div.flex div.flex div {
+    flex-basis: 100%;
+  }
+
+  section.grey-section div.flex i {
+    display: none;
+  }
+
+  section.grey-section div.flex img {
+    max-height: 200px;
+  }
+
+  section.feature ul.flex {
+    flex-wrap: wrap;
+  }
+
+  section.feature ul.flex li {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+
+  section.table-section div.flex {
+    flex-wrap: wrap;
+  }
+
+  section.table-section div.flex table {
+    flex-basis: 100%;
+    margin-bottom: 40px;
+  }
+
+  footer.flex {
+    flex-wrap: wrap;
+  }
+
+  footer.flex div {
+    flex-basis: 100%;
+  }
+
+  footer.flex ul {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+}
+
+
+
+
+}

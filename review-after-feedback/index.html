@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DigitalOcean Flexbox</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  </head>
+  <body>
+
+    <header>
+
+      <div>
+        <img src="img/logo.png" alt="">
+      </div>
+
+      <ul>
+
+        <li>
+          <a href="#">Products</a>
+        </li>
+
+        <li>
+          <a href="#">Customers</a>
+        </li>
+
+        <li>
+          <a href="#">Products</a>
+        </li>
+
+        <li>
+          <a href="#">Pricing</a>
+        </li>
+
+      </ul>
+
+      <ul>
+
+        <li>
+          <a href="#">Docs</a>
+        </li>
+
+        <li>
+          <a href="#">Support</a>
+        </li>
+
+        <li>
+          <a href="#">Login</a>
+        </li>
+
+        <li>
+          <button type="button" name="button">Sign up</button>
+        </li>
+
+      </ul>
+
+    </header>
+
+    <main>
+
+      <section class="myjumbotron flex">
+
+        <div class="marginforjumbo">
+          <h1>The simplest cloud platform for developers & teams</h1>
+          <p>Deploy, manage and scale cloud applications faster and more efficiently on DigitalOcean.We make managing infrastructure easy for teams and bussinesses, whether you're running one virtual machine or ten thousand.</p>
+        </div>
+
+        <div class="white">
+          <h2>Deploy your app in seconds.<br><span>Get started now.</span></h2>
+          <input type="email" placeholder= "Email" name="email" value="">
+          <input type="password" placeholder= "Password" name="password" value="">
+          <button class="buttonforjumbo" type="button" name="button">Create your account</button>
+          <button class="buttonforjumbo" id="myfix1" type="button" name="button">
+            <span id="google">
+              <img src="img/google-icon.png" alt="">
+            </span>
+            Sign up with google
+          </button>
+          <h6>By signing up you agree to the <a href="#">Terms of Service</a></h6>
+        </div>
+
+      </section>
+
+      <section class="grey-section">
+
+        <h5>INNOVATIVE BUSINESSES TRUST DIGITALOCEAN</h5>
+
+        <ul class="flex">
+
+          <li>
+            <img src="img/docker.svg" alt="">
+          </li>
+
+          <li>
+            <img src="img/gitlab.svg" alt="">
+          </li>
+
+          <li>
+            <img src="img/slack.svg" alt="">
+          </li>
+
+          <li>
+            <img src="img/hashicorp.svg" alt="">
+          </li>
+
+          <li>
+            <img src="img/hashicorp.svg" alt="">
+          </li>
+
+          <li>
+            <img src="img/splunklogo.svg" alt="">
+          </li>
+
+        </ul>
+
+        <h6>
+          <a href="#">
+            View customer stories >
+          </a>
+        </h6>
+
+      </section>
+
+      <section class="deploy-and-scale">
+
+        <h2>Deploy and scale seamlessly</h2>
+
+        <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+
+        <div class="flex">
+
+          <ul>
+
+            <li>Deploy</li>
+
+            <li>Manage</li>
+
+            <li>Secure</li>
+
+            <li>Scale</li>
+
+            <li>Monitor</li>
+
+          </ul>
+
+          <div class="flex">
+
+            <div>
+
+              <img src="img/cluster-deploy.svg" alt="">
+              <h3>Cluster deployments</h3>
+              <p>Prevision multiple Droplets(virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+
+            </div>
+
+            <div>
+
+              <img src="img/optimized-compute.svg" alt="">
+              <h3>Optimized compute types</h3>
+              <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
+
+            </div>
+
+            <div>
+
+              <img src="img/one-click.svg" alt="">
+              <h3>One-click apps</h3>
+              <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+
+            </div>
+
+            <div>
+
+              <img src="img/global.svg" alt="">
+              <h3>Global availability</h3>
+              <p>Deploy to any of our data center regions around the world.</p>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="grey-section">
+
+        <h2>Designed for developers</h2>
+
+        <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API.</p>
+
+        <div class="flex">
+
+          <i class="fas fa-chevron-left"></i>
+
+          <img src="img/screenshot-create-droplet-12336b41.jpg" alt="">
+
+          <i class="fas fa-chevron-right"></i>
+
+        </div>
+
+        <h6>Create compute servers in 55 seconds or less.</h6>
+
+        <div class="circle">
+
+          <i class="fas fa-circle"></i>
+
+          <i class="far fa-circle"></i>
+
+          <i class="far fa-circle"></i>
+
+          <i class="far fa-circle"></i>
+
+        </div>
+        
+      </section>
+
+      <section class="feature">
+
+        <h2>The features your business needs</h2>
+
+        <ul class="flex">
+
+          <li>
+            <img src="img/pred-pricing.svg" alt="pricing">
+              <h3>Predictable pricing</h3>
+              <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leaning pricing structure</p>
+              <a href="#">Pricing > </a>
+          </li>
+
+          <li>
+            <img src="img/world-class.svg" alt="pricing">
+              <h3>World-class service</h3>
+              <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
+              <a href="#">Support > </a>
+          </li>
+
+          <li>
+            <img src="img/reliable-platform.svg" alt="pricing">
+              <h3>Reliable platform</h3>
+              <p>More than 100.000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+              <a href="#">Security ></a>
+          </li>
+
+        </ul>
+
+      </section>
+
+      <section class="table-section">
+
+        <h2>Service your customers around the world from 12 regions.</h2>
+
+        
+
+        <div class="flex">
+
+          <table class="table">
+
+            <tr>
+              <td>AMS2</td>
+              <td>Amsterdam, Netherlands</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>AMS3</td>
+              <td>Amsterdam, Netherlands</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>BLR1</td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>FRA1</td>
+              <td>Frankfurt, Germany</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>LON1</td>
+              <td>London, UK</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>NYC1</td>
+              <td>New York USA</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+          </table>
+
+          <table class="table">
+
+            <tr>
+              <td>AMS2</td>
+              <td>Amsterdam, Netherlands</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>AMS3</td>
+              <td>Amsterdam, Netherlands</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>BLR1</td>
+              <td>Bangalore, India</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>FRA1</td>
+              <td>Frankfurt, Germany</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>LON1</td>
+              <td>London, UK</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+            <tr>
+              <td>NYC1</td>
+              <td>New York USA</td>
+              <td><a href="#">Test Speed ></a></td>
+            </tr>
+
+          </table>
+          
+        </div>
+
+      </section>
+
+      <section class="grey-section">
+
+        <h2>Development teams love DigitalOcean</h2>
+
+        <div class="flex">
+
+          <i class="fas fa-chevron-left"></i>
+
+          <div>
+            <img src="img/rockerbox-logo.webp" alt="">
+            <p>"We have been able to make scaling the technical infrastructure of our business cost effective"</p>
+            <h6>Rick o'Tootle <br> Co-founder and CTO</h6>
+            <a href="#">Read story ></a>
+          </div>
+
+          <i class="fas fa-chevron-right"></i>
+
+        </div>
+
+        <div class="circle">
+
+          <i class="fas fa-circle"></i>
+
+          <i class="far fa-circle"></i>
+
+          <i class="far fa-circle"></i>
+
+          <i class="far fa-circle"></i>
+
+        </div>
+
+      </section>
+
+      <section class="blue">
+
+        <h2>Get started now.</h2>
+
+        <button type="button" name="button">Create your account</button>
+
+      </section>
+
+    </main>
+
+    <footer class="flex">
+
+      <div>
+        <img src="img/logo-small.svg" alt="">
+        <h6>© 2018 DigitalOcean, LLC. All rights reserved.<br> <span> Proudly made in NY </span></h6>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook-square"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <ul>
+        
+        <li><strong>Company</strong></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Leadership</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Partner network</a></li>
+        <li><a href="#">Referral Program</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Press</a></li>
+        <li><a href="#">Legal & Security</a></li>
+
+      </ul>
+
+      <ul>
+        
+        <li><strong>Products</strong></li>
+        <li><a href="#">Droplets</a></li>
+        <li><a href="#">Spaces</a></li>
+        <li><a href="#">Kubernetes</a></li>
+        <li><a href="#">Load Balances</a></li>
+        <li><a href="#">Block Storage</a></li>
+        <li><a href="#">Tools & Integrations</a></li>
+        <li><a href="#">One-Click Apps</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">Release Notes</a></li>
+
+      </ul>
+
+      <ul>
+
+        <li><strong>Community</strong></li>
+        <li><a href="#">Tutorials</a></li>
+        <li><a href="#">Meetups</a></li>
+        <li><a href="#">Q&A</a></li>
+        <li><a href="#">Write for Donations</a></li>
+        <li><a href="#">Droplets for Demo</a></li>
+        <li><a href="#">Hatch</a></li>
+        <li><a href="#">Shop Swag</a></li>
+        <li><a href="#">Research Program</a></li>
+        <li><a href="#">Currents Research</a></li>
+        <li><a href="#">Open Source</a></li>
+      </ul>
+
+      <ul>
+
+        <li><strong>Support</strong></li>
+        <li><a href="#">Contact Support</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Network Status</a></li>
+        
+      </ul>
+
+
+
+    </footer>
+
+  </body>
+</html>
